@@ -23,8 +23,18 @@ void floyd_warshall()
     for( int k=0; k<n; k++ ) {
         for( int i=0; i<n; i++ ) {
             for( int j=0; j<n; j++ ) {
-                if( g[i][j] > g[i][k] + g[k][j] ) {
+                if( g[i][k]!=INF && g[k][j]!=INF && g[i][j] > g[i][k] + g[k][j] ) {
+
                     g[i][j] = g[i][k] + g[k][j];
+
+                    /*
+                    Caution!!!
+                    INF check for g[i][k] and g[k][j] must be given. This in not a part of the
+                    logic of the algorithm. if INF is set to such a big value that adding anything
+                    to INF ( e.g. ....... g[i][k] + g[k][j].......) might cross the limit of the variable
+                    holding it, then this check must be done cause in these cases "g[i][k] + g[k][j]" would
+                    cross the limit and produce a negative value which is less than g[i][j]
+                    */
 
                     /* as we are going from i to j through k we have to go to k at first
                     so the next node to go from i for going to j is the same as that for going
