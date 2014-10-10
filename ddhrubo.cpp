@@ -31,9 +31,11 @@ using namespace std;
 
 //{ ---------- Stl Functions
 # define pb( a, x ) a.push_back( x )
-# define sz( a ) a.size()
+# define sz( a ) (int)a.size()
+# define clr( a ) a.clear()
 # define srtp( a ) sort( a.begin(), a.end() )
 # define srtpf( a, c ) sort( a.begin(), a.end(), c )
+# define revp( a ) reverse( a.begin(), a.end() )
 //}
 
 //{ ---------- Misc Functions
