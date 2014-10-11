@@ -1,5 +1,5 @@
 /*
-Name: Helpful little functions.
+Name: GCD & LCM
 Purpose: Mathematical functions
 */
 
@@ -9,4 +9,8 @@ int gcd( int divisor, int dividend ) {
         dividend = divisor;
         divisor = remainder;
     } return dividend;
+}
+
+int lcm( int a, int b ) {
+    return ( a / gcd(a,b) ) * b; // division is done first to avoid overflow
 }

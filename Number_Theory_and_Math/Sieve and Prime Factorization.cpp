@@ -24,8 +24,8 @@ void sieve()
 // checking if a number is prime
 if( num==2 || ( num%2 && !prime[num] ) ) num_is_prime=true;
 
-// printing the prime factors of a number
-void divisor( int num )
+// prime factorization WITH Sieve
+void factor( int num )
 {
     int i=0;
     while( prime_list[i] <= sqrt(num) )
@@ -43,5 +43,15 @@ void divisor( int num )
     }
     if( num>1 ) cout << num; // if the reamining number is greater than 1 then it is also
                              // a prime and a divisor of the original number
+    cout << endl;
+}
+
+
+// prime factorization WITHOUT Sieve
+void factor( int num ) {
+    for( int i=2; i*i<=num; i++ ) {
+        if( num%i==0 ) cout << i << " ";
+        while( num%i==0 ) num/=i;
+    } if( num>1 ) cout << num << " ";
     cout << endl;
 }
