@@ -47,7 +47,7 @@ using namespace std;
 //}
 
 //{ ---------- Loops
-# define forab( i, a, b ) for( __typeof(a) i=(a); i<=(b); i++ )
+# define forab( i, a, b ) for( __typeof(b) i=(a); i<=(b); i++ )
 # define rep(i,a) forab( i, 0, a-1 )
 # define arep(i,a) forab( i, 1, a )
 # define forba( i, b, a ) for( __typeof(b) i=(b); i>=(a); i-- )
