@@ -16,6 +16,7 @@
 # include <map>
 # include <sstream>
 # include <set>
+# include <utility>
 //}
 using namespace std;
 
@@ -27,6 +28,10 @@ using namespace std;
 # define qll queue <long long>
 # define pqint priority_queue <int>
 # define pqll priority_queue <long long>
+# define pii pair<int,int>
+# define ppi pair< pii, int >
+# define ff first
+# define ss second
 //}
 
 //{ ---------- Stl Functions
@@ -36,6 +41,7 @@ using namespace std;
 # define srtp( a ) sort( a.begin(), a.end() )
 # define srtpf( a, c ) sort( a.begin(), a.end(), c )
 # define revp( a ) reverse( a.begin(), a.end() )
+# define mp( a, b ) make_pair( a, b )
 //}
 
 //{ ---------- Misc Functions
