@@ -24,12 +24,34 @@ using namespace std;
 # define ll long long
 # define ff first
 # define ss second
+# define vi vector < int >
+# define vll vector < ll >
+# define pii pair < int , int >
+# define pll pair < ll, ll >
 //}
 
-//{ ---------- Misc Functions
+//{ ---------- Input
+# define II ( { int a; scanf("%d",&a); a; } )
+# define LL ( { ll a; scanf("%lld",&a); a; } )
+# define DD ( { double a; scanf("%lf",&a); a; } )
+//}
+
+//{ ---------- Macro
 # define sqr( a ) a*a
 # define cube( a ) a*a*a
 # define memo( a, x ) memset( a, x, sizeof a )
+# define all(a) a.begin () , a. end ()
+# define pb push_back
+//}
+
+//{ ---------- Loops
+# define forab(i,a,b) for( __typeof (a) i = a ; i <= b ; i++ )
+# define forba(i,a,b) for( __typeof (a) i = a ; i >= b ; i-- )
+# define rep(i,n) forab(i,0,n-1)
+# define repn(i,n) forab(i,1,n)
+# define repr(i,n) forba(i,n-1,0)
+# define repnr(i,n) forba(i,n,1)
+# define forstl(i, s) for ( __typeof ((s).end ()) i = (s).begin (); i != (s).end (); i++ )
 //}
 
 //{ ---------- I/O Streams
@@ -49,7 +71,6 @@ using namespace std;
 //---------------------------------- Start of the program
 
 int main() {
-
 
 
     return 0;
