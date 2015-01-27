@@ -41,6 +41,8 @@ using namespace std;
 # define cube( a ) a*a*a
 # define memo( a, x ) memset( a, x, sizeof a )
 # define all(a) a.begin () , a. end ()
+# define clr(a) a.clear()
+# define sz(a) a.size()
 # define pb push_back
 //}
 
